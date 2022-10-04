@@ -1,0 +1,35 @@
+<%- include("../parts/header") %>
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-lg-12">
+            <h2><%- locals.title %></h2>
+            <section class="mb-5">
+                <p class="fs-5 mb-4">
+                <form action="/contact" method="POST">
+                    <div class="mb-3">
+                        <input type="text" class="form-control" id="exampleFormControlInput1" name="vorname" placeholder="Vorname" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <input type="text" class="form-control" id="exampleFormControlInput1" name="nachname" placeholder="Nachname" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <input type="text" class="form-control" id="exampleFormControlInput1"  name="email" placeholder="E-Mail" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <textarea name="message" class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Ihre Nachricht..."></textarea>
+                    </div>
+
+                    <div class="mb-3">
+                        <button class="btn btn-dark" name="submit">Nachricht senden</button>
+                    </div>
+
+                </form>
+            </section>
+        </div>
+        <!-- Side widgets-->
+    </div>
+</div>
+<%- include("../parts/footer") %>

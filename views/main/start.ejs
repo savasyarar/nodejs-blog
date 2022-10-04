@@ -1,0 +1,20 @@
+<%- include("../parts/header") %>
+<div class="container mt-5">
+<div class="row">
+    <div class="col-lg-12">
+        <% locals.posts.forEach(element => { %>
+            <section id="news">
+                <div class="container px-4">
+                    <div class="row gx-4 justify-content-center">
+                        <div class="col-lg-8">
+                            <a class="link-dark" href="/blog/<%- element.id %>"><h2><%- element.title %></h2></a>
+                            <p class="lead"><%- element.content %></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        <% }) %>
+    </div>
+</div>
+</div>
+<%- include("../parts/footer") %>
